@@ -36,11 +36,12 @@ body {
 .navbar-li .navbar-a {
     display: block;
     color: white;
+    transition: 0.5s;
 }
 
 .navbar-li .navbar-a:hover {
     color: rgb(184, 121, 248);
-    transition: 0.7s
+    transition: 0.5s
 }
 
 .navbar-name {
@@ -55,12 +56,19 @@ body {
 }
 
 .projects {
-    position: fixed;
+    position: absolute;
     top: 70px;
     width: 100%;
     min-height: 500px;
     text-align: center;
     background-color: rgb(65, 65, 65);
+}
+
+.projects-row {
+    top: 72px;
+    margin: auto;
+    min-height: 230px;
+    width: 60%;
 }
 
 .projects h1 {
@@ -75,18 +83,28 @@ body {
     margin: auto;
 }
 
-.projects .gallery {
-    margin: 5px;
-    float: left;
+.projects-row .gallery {
+    padding-top: 15px;
+    padding: 30px;
     width: 200px;
+    transition: 0.5s;
+    display: inline-block;
 }
 
-.projects .gallery .img {
+.projects-row .gallery img {
+    border-radius: 25px;
+    padding-bottom: 5px;
     width: 100%;
     height: auto;
 }
 
-.projects .description {
+.projects-row .gallery .description {
     padding: 5px;
     text-align: center;
+}
+
+.projects-row .gallery:hover {
+    transform: scale(1.10);
+    color:rgb(184, 121, 248);
+    transition: 0.5s;
 }
