@@ -65,6 +65,7 @@ body {
 
 .projects h1 {
     font-weight: normal;
+    padding-top: 20px;
 }
 
 .half-line {
@@ -72,4 +73,20 @@ body {
     background-color: white;
     width: 50%;
     margin: auto;
+}
+
+.projects .gallery {
+    margin: 5px;
+    float: left;
+    width: 200px;
+}
+
+.projects .gallery .img {
+    width: 100%;
+    height: auto;
+}
+
+.projects .description {
+    padding: 5px;
+    text-align: center;
 }
