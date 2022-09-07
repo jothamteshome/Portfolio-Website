@@ -1,26 +1,32 @@
 body {
-    background-color: rgb(40, 40, 40);
     color: white;
     padding: 0;
     margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar-ul {
-    position: sticky;
+    position: fixed;
     position: -webkit-sticky;
     list-style-type: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 0;
     margin: 0;
     padding: 0;
-    height: 100px;
+    height: 70px;
+    width: 100%;
+    background-color:rgb(40, 40, 40);
 }
 
 .navbar-li {
+    position: sticky;
+    top: 0;
+    right: 0;
     display: block;
     padding: 15px;
     padding-top: 10px;
     float: right;
     text-align: center;
+    line-height: 50px;
 }
 
 .navbar-a {
@@ -38,9 +44,32 @@ body {
 }
 
 .navbar-name {
+    position: sticky;
     display: block;
-    padding-left: 50px;
+    padding-left: 100px;
     padding-top: 10px;
     float: left;
     text-align: center;
+    line-height: 50px;
+    font-size: 200%;
+}
+
+.projects {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+}
+
+.projects h1 {
+    font-weight: normal;
+}
+
+.half-line {
+    height: 2px;
+    background-color: white;
+    width: 50%;
+    margin: auto;
 }
