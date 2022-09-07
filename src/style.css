@@ -1,3 +1,5 @@
+/* Styling of built in classes */
+
 body {
     color: white;
     padding: 0;
@@ -5,6 +7,12 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h1 {
+    font-weight: normal;
+    padding-top: 20px;
+}
+
+/* Design and style of the navbar */
 .navbar-ul {
     position: fixed;
     position: -webkit-sticky;
@@ -55,25 +63,20 @@ body {
     font-size: 200%;
 }
 
+/* Design and style of the "Projects" section */
 .projects {
-    position: absolute;
-    top: 70px;
+    position: relative;
+    top: 49px;
     width: 100%;
-    min-height: 500px;
+    min-height: 200px;
     text-align: center;
     background-color: rgb(65, 65, 65);
 }
 
-.projects-row {
+.projects-display {
     top: 72px;
     margin: auto;
-    min-height: 230px;
     width: 60%;
-}
-
-.projects h1 {
-    font-weight: normal;
-    padding-top: 20px;
 }
 
 .half-line {
@@ -83,7 +86,7 @@ body {
     margin: auto;
 }
 
-.projects-row .gallery {
+.projects-display .gallery {
     padding-top: 15px;
     padding: 30px;
     width: 200px;
@@ -91,20 +94,41 @@ body {
     display: inline-block;
 }
 
-.projects-row .gallery img {
+.projects-display .gallery img {
     border-radius: 25px;
     padding-bottom: 5px;
     width: 100%;
     height: auto;
 }
 
-.projects-row .gallery .description {
+.projects-display .gallery .description {
     padding: 5px;
     text-align: center;
 }
 
-.projects-row .gallery:hover {
+.projects-display .gallery:hover {
     transform: scale(1.10);
     color:rgb(184, 121, 248);
     transition: 0.5s;
+}
+
+/* Design and style of the "About Me" section */
+.about {
+    position: relative;
+    top: 27px;
+    min-height:500px;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+}
+
+.about .summary-display {
+    height: 200px;
+    width: 70%;
+    margin: auto;
+}
+
+.about .summary-display h3 {
+    font-weight: normal;
+    color: white;
+    text-align: center;
 }
