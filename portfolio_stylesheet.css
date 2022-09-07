@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
+.navbar-ul {
+    position: sticky;
+    position: -webkit-sticky;
+    list-style-type: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-li {
+    float: right;
+    text-align: center;
+}
+
+.navbar-name {
+    float: left;
+    text-align: center;
+}
