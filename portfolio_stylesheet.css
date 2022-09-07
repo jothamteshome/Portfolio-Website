@@ -8,14 +8,35 @@ body {
     position: -webkit-sticky;
     list-style-type: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-li {
+    display: block;
+    padding: 15px;
+    padding-top: 10px;
     float: right;
     text-align: center;
 }
 
+.navbar-a {
+    display: block;
+}
+
+.navbar-li .navbar-a {
+    display: block;
+    color: white;
+}
+
+.navbar-li .navbar-a:hover {
+    color: rgb(184, 121, 248);
+}
+
 .navbar-name {
+    display: block;
+    padding-left: 50px;
+    padding-top: 10px;
     float: left;
     text-align: center;
 }
