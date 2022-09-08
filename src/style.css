@@ -12,6 +12,10 @@ h1 {
     padding-top: 20px;
 }
 
+h2 {
+    font-weight: normal;
+}
+
 /* Design and style of the navbar */
 .navbar-ul {
     position: fixed;
@@ -63,10 +67,58 @@ h1 {
     font-size: 200%;
 }
 
+/* Design and style of the "About Me" section */
+.about {
+    position: relative;
+    top: 49px;
+    min-height:200px;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+}
+
+.about .summary-display {
+    width: 70%;
+    margin: auto;
+}
+
+.about .summary-display h3 {
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+.about .lang-section {
+    vertical-align: top;
+    width: 20%;
+    background-color: rgb(65, 65, 65);
+    min-height: 200px;
+    display: inline-block;
+}
+
+.about .program-section {
+    vertical-align: top;
+    width: 20%;
+    background-color: rgb(65, 65, 65);
+    min-height: 200px;
+    display: inline-block;
+}
+
+.about .program-section ul {
+    margin-left: 10%;
+    display: inline-block;
+    text-align: left;
+}
+
+.about .lang-section ul {
+    margin-left: -15%;
+    display: inline-block;
+    text-align: left;
+}
+
 /* Design and style of the "Projects" section */
 .projects {
     position: relative;
-    top: 49px;
+    top: 27px;
     width: 100%;
     min-height: 200px;
     text-align: center;
@@ -112,23 +164,3 @@ h1 {
     transition: 0.5s;
 }
 
-/* Design and style of the "About Me" section */
-.about {
-    position: relative;
-    top: 27px;
-    min-height:500px;
-    text-align: center;
-    background-color: rgb(65, 65, 65);
-}
-
-.about .summary-display {
-    height: 200px;
-    width: 70%;
-    margin: auto;
-}
-
-.about .summary-display h3 {
-    font-weight: normal;
-    color: white;
-    text-align: center;
-}
