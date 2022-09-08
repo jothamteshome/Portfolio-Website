@@ -59,7 +59,7 @@ h2 {
 .navbar-name {
     position: sticky;
     display: block;
-    padding-left: 100px;
+    padding-left: 20px;
     padding-top: 10px;
     float: left;
     text-align: center;
@@ -77,14 +77,29 @@ h2 {
 }
 
 .about .summary-display {
-    width: 70%;
-    margin: auto;
+    position: relative;
+    top: -55px;
+    width: 40%;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.about .image-display {
+    padding: 20px;
+    width: 20%;
+    display: inline-block;
+}
+
+.about .image-display img {
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
 }
 
 .about .summary-display h3 {
     font-weight: normal;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 .about .lang-section {
@@ -128,7 +143,7 @@ h2 {
 .projects-display {
     top: 72px;
     margin: auto;
-    width: 60%;
+    width: 70%;
 }
 
 .half-line {
@@ -193,13 +208,19 @@ h2 {
     display: block;
     float: right;
     text-align: center;
+    margin-right: 5px;
 }
 
 .contact-info-li a {
-    width: 40px;
-    height: 40px;
-    padding: 5px 25px 0 25px;
+    width: 34px;
+    height: 34px;
+    padding: 8px 25px 0 0;
     display: block;
+    transition: 0.5s;
+}
+
+.contact-info-li a:hover {
+    transform: scale(1.10);
     transition: 0.5s;
 }
 
