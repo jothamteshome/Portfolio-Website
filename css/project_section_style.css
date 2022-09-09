@@ -1,0 +1,57 @@
+/* Styling for projects section and projects section elements */
+
+.projects {
+    position: relative;
+    top: 27px;
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+}
+
+.projects-display {
+    top: 72px;
+    margin: auto;
+    width: 70%;
+}
+
+.projects-display .gallery {
+    padding-top: 15px;
+    padding: 30px;
+    width: 200px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.projects-display a {
+    text-decoration: none;
+}
+
+.projects-display a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.projects-display .gallery img {
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+
+.projects-display .gallery:hover img {
+    transition: 0.5s;
+    border: 2px solid rgb(184, 121, 248);
+}
+
+.projects-display .gallery .description {
+    padding: 5px;
+    text-align: center;
+}
+
+.projects-display .gallery:hover {
+    transform: scale(1.10);
+    color:rgb(184, 121, 248);
+    transition: 0.5s;
+}

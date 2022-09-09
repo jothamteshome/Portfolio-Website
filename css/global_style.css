@@ -1,0 +1,29 @@
+/* Styling of global classes */
+
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+h1 {
+    font-weight: normal;
+    padding-top: 20px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.half-line {
+    height: 2px;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}

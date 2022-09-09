@@ -1,0 +1,63 @@
+/* Styling for about section and about section elements */
+
+.about {
+    position: relative;
+    top: 49px;
+    min-height:200px;
+    text-align: center;
+    background-color: rgb(65, 65, 65);
+}
+
+.about .summary-display {
+    position: relative;
+    top: -35px;
+    width: 40%;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.about .image-display {
+    padding: 20px;
+    width: 20%;
+    display: inline-block;
+}
+
+.about .image-display img {
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.about .summary-display h3 {
+    font-weight: normal;
+    color: white;
+    text-align: left;
+}
+
+.about .lang-section {
+    vertical-align: top;
+    width: 20%;
+    background-color: rgb(65, 65, 65);
+    min-height: 200px;
+    display: inline-block;
+}
+
+.about .program-section {
+    vertical-align: top;
+    width: 20%;
+    background-color: rgb(65, 65, 65);
+    min-height: 200px;
+    display: inline-block;
+}
+
+.about .program-section ul {
+    margin-left: 10%;
+    display: inline-block;
+    text-align: left;
+}
+
+.about .lang-section ul {
+    margin-left: -15%;
+    display: inline-block;
+    text-align: left;
+}

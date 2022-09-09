@@ -1,0 +1,51 @@
+/* Styling for contact info section and contact info section elements */
+
+.contact-info-ul {
+    position: relative;
+    top: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+}
+
+.contact-info-contact-me {
+    display: block;
+    float: left;
+    padding: 0px 25px 0px 25px;
+    line-height: 50px;
+}
+
+.contact-info-email {
+    display: block;
+    float: left;
+    line-height: 50px;
+}
+
+.contact-info-li {
+    position: sticky;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.contact-info-li a {
+    width: 34px;
+    height: 34px;
+    padding: 8px 25px 0 0;
+    display: block;
+    transition: 0.5s;
+}
+
+.contact-info-li a:hover {
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.contact-info-li a img {
+    width: 100%;
+    height: auto;
+}
