@@ -26,6 +26,8 @@
 .projects-display a {
     text-decoration: none;
     -webkit-text-decoration: none;
+    color: white;
+    -webkit-color: white;
 }
 
 .projects-display a:visited {
