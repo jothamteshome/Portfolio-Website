@@ -25,11 +25,13 @@
 
 .projects-display a {
     text-decoration: none;
+    -webkit-text-decoration: none;
 }
 
 .projects-display a:visited {
     color: white;
     text-decoration: none;
+    -webkit-text-decoration: none;
 }
 
 .projects-display .gallery img {
