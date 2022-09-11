@@ -1,51 +1,65 @@
 /* Styling for navbar and navbar elements */
 
-.navbar-ul {
+.navbar {
     position: fixed;
-    list-style-type: none;
     top: 0;
-    margin: 0;
-    padding: 0;
-    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background-color:rgb(40, 40, 40);
+    height: 70px;
+    background-color: rgb(40, 40, 40);
 }
 
-.navbar-li {
-    position: sticky;
-    top: 0;
-    right: 0;
-    display: block;
-    padding: 15px;
-    padding-top: 10px;
-    float: right;
-    text-align: center;
-    line-height: 50px;
+.navbar .name {
+    display: flex;
+    padding-left: 20px;
+    font-size: 200%;
 }
 
-.navbar-a {
-    display: block;
+.navbar .name a {
     text-decoration: none;
+    color: white;
 }
 
-.navbar-li .navbar-a {
-    display: block;
+.navbar .internal-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 250px;
+    height: 100%;
+}
+
+.section a {
+    text-decoration: none;
     color: white;
     transition: 0.5s;
 }
 
-.navbar-li .navbar-a:hover {
+.section a:hover {
     color: rgb(184, 121, 248);
-    transition: 0.5s
+    transition: 0.5s;
 }
 
-.navbar-name {
-    position: sticky;
-    display: block;
-    padding-left: 20px;
-    padding-top: 10px;
-    float: left;
-    text-align: center;
-    line-height: 50px;
-    font-size: 200%;
+@media (max-width:600px) {
+    .navbar {
+        flex-direction: column;
+        height: 100px;
+    }
+    
+    .navbar .name {
+        justify-content: center;
+        align-items: center;
+        font-size: 150%;
+        width: 100%;
+        height: 50%;
+    }
+
+    .navbar .internal-flexbox {
+        height: 50%;
+        align-items: center;
+        width: 100%;
+    }
 }

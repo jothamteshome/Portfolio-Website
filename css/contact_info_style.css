@@ -12,27 +12,6 @@
     background-color: rgb(40, 40, 40);
 }
 
-@media (max-width: 500px) {
-    .contact-flexbox {
-        flex-direction: column;
-        height: 75px;
-    }
-
-    .contact-flexbox .internal-flexbox {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .internal-flexbox .textbox {
-        margin-top: 5px;
-    }
-
-    .internal-flexbox .links {
-        margin-bottom: 5px;
-    }
-    
-}
-
 .contact-flexbox .internal-flexbox {
     display: flex;
     align-items: center;
@@ -67,28 +46,37 @@
     transition: 0.5s
 }
 
-.contact-info-li {
-    position: sticky;
-    display: block;
-    float: right;
-    text-align: center;
-    margin-right: 5px;
-}
+@media (max-width: 500px) {
+    .contact-flexbox {
+        flex-direction: column;
+        height: 75px;
+    }
 
-.contact-info-li a {
-    width: 34px;
-    height: 34px;
-    padding: 8px 25px 0 0;
-    display: block;
-    transition: 0.5s;
-}
+    .contact-flexbox .internal-flexbox {
+        justify-content: center;
+        width: 100%;
+    }
 
-.contact-info-li a:hover {
-    transform: scale(1.10);
-    transition: 0.5s;
-}
+    .internal-flexbox .textbox {
+        margin-top: 5px;
+        padding-left: 0px;
+    }
 
-.contact-info-li a img {
-    width: 100%;
-    height: auto;
+    .internal-flexbox .links {
+        margin-bottom: 5px;
+        margin-right: 0px;
+    }
+
+    .links a {
+        margin-right: 0px;
+    }
+
+    #linkedin {
+        margin-right: 10px;
+    }
+
+    #github {
+        margin-left: 10px;
+    }
+    
 }
