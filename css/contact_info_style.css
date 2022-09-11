@@ -1,27 +1,70 @@
 /* Styling for contact info section and contact info section elements */
 
-.contact-info-ul {
+.contact-flexbox {
     position: relative;
-    top: 10px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    height: 50px;
     background-color: rgb(40, 40, 40);
 }
 
-.contact-info-contact-me {
-    display: block;
-    float: left;
-    padding: 0px 25px 0px 25px;
-    line-height: 50px;
+@media (max-width: 500px) {
+    .contact-flexbox {
+        flex-direction: column;
+        height: 75px;
+    }
+
+    .contact-flexbox .internal-flexbox {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .internal-flexbox .textbox {
+        margin-top: 5px;
+    }
+
+    .internal-flexbox .links {
+        margin-bottom: 5px;
+    }
+    
 }
 
-.contact-info-email {
-    display: block;
-    float: left;
-    line-height: 50px;
+.contact-flexbox .internal-flexbox {
+    display: flex;
+    align-items: center;
+}
+
+.internal-flexbox .textbox {
+    display: inline;
+    padding-left: 25px;
+}
+
+.internal-flexbox .links {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.links a {
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+    margin-right: 15px;
+}
+
+.links a:hover img{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.links a img {
+    min-width: 34px;
+    width: 34px;
+    height: auto;
+    transition: 0.5s
 }
 
 .contact-info-li {
