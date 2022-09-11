@@ -20,12 +20,6 @@
     min-height: 300px;
 }
 
-@media (max-width: 800px) {
-    .about .summary-flexbox {
-        flex-direction: column;
-    }
-}
-
 .summary-flexbox .summary-display {
     width: 50%;
     min-width: 300px;
@@ -55,12 +49,6 @@
     min-height: 300px;
 }
 
-@media (max-width: 800px) {
-    .about .skills-flexbox .tech-skills{
-        width: 100%;
-    }
-}
-
 .skills-flexbox .tech-skills {
     width: 20%;
     min-height: 200px;
@@ -69,4 +57,20 @@
 .tech-skills ul {
     text-align: left;
     margin-left: 22%;
+}
+
+@media (max-width: 800px) {
+    .about .summary-flexbox {
+        flex-direction: column;
+    }
+
+    .about .skills-flexbox .tech-skills{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        top: 70px;
+    }
 }
