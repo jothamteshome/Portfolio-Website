@@ -36,7 +36,7 @@
     -webkit-text-decoration: none;
 }
 
-.projects-display .gallery img {
+.gallery img {
     border: 2px solid white;
     border-radius: 25px;
     width: 100%;
@@ -44,18 +44,22 @@
     transition: 0.5s;
 }
 
-.projects-display .gallery:hover img {
+.gallery:hover img {
     transition: 0.5s;
     border: 2px solid rgb(184, 121, 248);
 }
 
-.projects-display .gallery .description {
+.gallery .description {
     padding: 5px;
     text-align: center;
 }
 
-.projects-display .gallery:hover {
+.gallery:hover {
     transform: scale(1.10);
     color:rgb(184, 121, 248);
     transition: 0.5s;
+}
+
+#Class-Project-1 {
+    pointer-events: none;
 }

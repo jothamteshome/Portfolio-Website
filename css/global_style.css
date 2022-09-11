@@ -1,6 +1,7 @@
 /* Styling of global classes */
 
 body {
+    background-color: rgb(65, 65, 65);
     color: white;
     padding: 0;
     margin: 0;
