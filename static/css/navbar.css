@@ -1,0 +1,39 @@
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: #404040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.title {
+    margin-left: 2vw;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.links {
+    margin-right: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.links .link-element {
+    padding: 0 1vw 0 1vw;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    opacity: 50%;
+}

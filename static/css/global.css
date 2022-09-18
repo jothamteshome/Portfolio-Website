@@ -1,0 +1,13 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.icon {
+    height: 5vh;
+}
+
+.icon:hover {
+    opacity: 50%;
+}

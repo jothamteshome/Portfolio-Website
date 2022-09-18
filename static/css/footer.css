@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    justify-content: space-between;
+    background-color: #404040;
+}
+
+.footer .contact-me {
+    margin-left: 2vw;
+    color: #FFFFFF;
+}
+
+.footer .external-links {
+    min-width: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
