@@ -1,8 +1,10 @@
+/* Sizing information for header */
 .header {
     width: 100%;
     height: 25vh;
 }
 
+/* Styling of banner image within header */
 .header .banner {
     width: 100%;
     height: 100%;

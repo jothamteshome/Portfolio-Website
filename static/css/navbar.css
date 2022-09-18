@@ -1,7 +1,5 @@
+/* Styling information for navigation bar */
 .navbar {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
     height: 10vh;
     width: 100%;
     background-color: #404040;
@@ -12,12 +10,14 @@
     z-index: 2;
 }
 
+/* Styling for the title of the page */
 .title {
     margin-left: 2vw;
     font-size: 1.5em;
     font-weight: bold;
 }
 
+/* Container of navigation links */
 .links {
     margin-right: 2vw;
     display: flex;
@@ -25,15 +25,19 @@
     align-items: center;    
 }
 
+/* Each individual link element */
 .links .link-element {
     padding: 0 1vw 0 1vw;
 }
 
+/* Remove text decoration and set color
+   of links to white */
 .link {
     text-decoration: none;
     color: white;
 }
 
+/* Change opacity when links are hovered over */
 .link:hover {
     opacity: 50%;
 }

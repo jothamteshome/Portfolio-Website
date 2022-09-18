@@ -1,3 +1,4 @@
+/* Styling for the main content section */
 .main{
     padding: 5vh 0 5vh 0;
     background-color: #cdcdcd;
@@ -20,6 +21,8 @@
     justify-content: space-between;
 }
 
+/* Size and style of an image within
+   a description row */
 .desc-row .img-section {
     width: 50vh;
     margin-right: 2vw;
@@ -27,12 +30,14 @@
     transition: 0.5s;
 }
 
+/* Temporarily increase size of image on hover */
 .img-section:hover {
     transform: scale(1.1);
     transition: 0.5s;
     z-index: 1;
 }
 
+/* Add border and fit image within image section */
 .img-section .img {
     border-color: #313131;
     border-width: 0.5vh;
@@ -42,6 +47,7 @@
     height: 100%;
 }
 
+/* Styling for text section of a description row */
 .desc-row .text-section {
     text-align: justify;
     text-justify: center;
@@ -52,11 +58,13 @@
     font-size: 1.2em;
 }
 
+/* Styling for a title within a description row */
 .text-section .title {
     text-decoration: underline;
     text-align: center;
 }
 
+/* Size and color of a content seperation line */
 .seperator-line {
     margin: 3vh 0 3vh 0;
     width: 80vw;
@@ -64,10 +72,12 @@
     background-color: #000000;
 }
 
+/* Remove hover mechanic of certain images */
 .no-hover {
     pointer-events: none;
 }
 
+/* Container for secondary text section */
 .secondary-text {
     width: 70%;
     min-height: 15vh;
@@ -78,28 +88,37 @@
     text-align: center;
 }
 
+/* Styling for title of secondary text section */
 .secondary-text .title {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 2vh;
 }
 
+/* Styling for content of secondary text section */
 .secondary-text .content {
     font-size: 1.2em;
     margin-bottom: 2vh;
 }
 
-.secondary-text .asterix {
+/* Styling for fine text of secondary text section */
+.secondary-text .fine-text {
     margin-top: 2vh;
     font-size: 0.85em;
 }
 
+/* Styling changes when page size is 
+   less than 650 pixels wide */
 @media (max-width: 650px) {
+    /* Description row becomes a column and
+       has no maximum height */
     .desc-row {
         flex-direction: column;
         max-height: none;
     }
 
+    /* Width of text section becomes 
+       80% of window size */
     .desc-row .text-section {
         height: auto;
         width: 80vw;

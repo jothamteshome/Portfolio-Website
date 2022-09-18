@@ -1,13 +1,17 @@
+/* Remove padding and margin from body and
+   set global font of page */
 body {
     padding: 0;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Set size of an icon */
 .icon {
     height: 5vh;
 }
 
+/* Change opacity when icon is hovered over */
 .icon:hover {
     opacity: 50%;
 }
