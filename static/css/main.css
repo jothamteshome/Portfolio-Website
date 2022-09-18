@@ -16,14 +16,13 @@
     display: flex;
     flex-direction: row;
     max-width: 80vw;
-    max-height: 50vh;
     align-items: center;
     justify-content: space-between;
 }
 
 .desc-row .img-section {
     width: 50vh;
-    margin-right: 1vw;
+    margin-right: 2vw;
     align-items: center;
     transition: 0.5s;
 }
@@ -44,9 +43,9 @@
 }
 
 .desc-row .text-section {
-    text-align: center;
-    text-justify: auto;
-    margin-left: 1vw;
+    text-align: justify;
+    text-justify: center;
+    margin-left: 2vw;
     width: 40vw;
     color: #000000;
     height: 100%;
@@ -55,6 +54,7 @@
 
 .text-section .title {
     text-decoration: underline;
+    text-align: center;
 }
 
 .seperator-line {
@@ -73,23 +73,35 @@
     min-height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
+    text-align: center;
 }
 
 .secondary-text .title {
     font-size: 1.5em;
     font-weight: bold;
-    text-align: center;
+    margin-bottom: 2vh;
 }
 
 .secondary-text .content {
     font-size: 1.2em;
-    text-align: center;
+    margin-bottom: 2vh;
 }
 
 .secondary-text .asterix {
     margin-top: 2vh;
     font-size: 0.85em;
-    text-align: center;
+}
+
+@media (max-width: 650px) {
+    .desc-row {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    .desc-row .text-section {
+        height: auto;
+        width: 80vw;
+    }
 }
