@@ -9,6 +9,7 @@ body {
 /* Set size of an icon */
 .icon {
     height: 5vh;
+    cursor: pointer;
 }
 
 /* Change opacity when icon is hovered over */

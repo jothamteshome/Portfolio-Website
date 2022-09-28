@@ -26,8 +26,8 @@
 }
 
 /* Each individual link element */
-.links .link-element {
-    padding: 0 1vw 0 1vw;
+.link-element {
+    padding: 1vh 1vw 1vh 1vw;
 }
 
 /* Remove text decoration and set color
@@ -40,4 +40,49 @@
 /* Change opacity when links are hovered over */
 .link:hover {
     opacity: 50%;
+}
+
+/* Creates container for links after menu
+   bar click */
+.menu-bar-display {
+    padding: 1vh 0 1vh 0;
+    position: absolute;
+    top: 35vh;
+    background-color: #393939;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+/* Checkbox responsible for dropdown menu appearing */
+#menu-bar-checkbox {
+    display: none;
+}
+
+/* Allow dropdown menu to appear once menu bar is clicked */
+#menu-bar-checkbox:checked ~ .menu-bar-display {
+    display: flex;
+}
+
+/* Creates a container for the menu bar icon */
+.menu-bar-icon {
+    position: relative;
+    display: none;
+    margin-right: 5vw;
+    align-items: center;
+}
+
+/* Allow for different styling options when 
+   screen size is below 650px */
+   @media (max-width: 650px) {
+
+    /* Remove links from navbar */
+    .links {
+        display: none;
+    }
+
+    /* Display menu bar icon */
+    .menu-bar-icon {
+        display: flex;
+    }
 }
