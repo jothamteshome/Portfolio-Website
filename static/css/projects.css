@@ -1,0 +1,46 @@
+/* Modify object fit for Discord's Clyde icon */
+#discord-bot {
+    object-fit: contain;
+    width: 20vh;
+    padding: 0 2.5vh 0 2.5vh;
+}
+
+/* Styling for a title within a description row */
+.text-section .title {
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Size and color of a content seperation line */
+.seperator-line {
+    margin: 3vh 0 3vh 0;
+    width: 80vw;
+    height: 0.2vh;
+    background-color: #000000;
+}
+
+/* Container for secondary text section */
+.secondary-text {
+    width: 70%;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Styling for title of secondary text section */
+.secondary-text .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+/* Styling for content of secondary text section */
+.secondary-text .content {
+    font-size: 1.2em;
+    margin-bottom: 2vh;
+}
